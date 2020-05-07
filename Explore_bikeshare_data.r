@@ -7,7 +7,7 @@ library(ggplot2)
 library(dplyr)
 
 # **************************************************************#
-# Does Gender influence the type of rider in New York?
+# Does Gender influence the type of rider in New York?          #
 # **************************************************************
 
 summary(ny) #Running a descriptive summary to understanding the data
@@ -44,7 +44,7 @@ table(ny2$Gender, ny2$User.Type)
 chisq.test(ny2$Gender, ny2$User.Type, correct =FALSE)
 
 # **************************************************************#
-# Is the trip duration made by riders influenced by their age?
+# Is the trip duration made by riders influenced by their age?  #
 # **************************************************************#
 
 # Let's first plot the Trip.Duration to see how their values are distributed
@@ -91,7 +91,7 @@ qplot(x = Birth.Year, y = Trip.Duration, data = ny4 , size = I(0.5)) +
   ggtitle ("Viz 6: Plot of relationship between Birth Year & Trip Duration of riders in NY")
 
 # ******************************************************************************#
-# Are male riders younger or older than female in New York in general?
+# Are male riders younger or older than female in New York in general?          #
 # *****************************************************************************#
    
 # A first initial Plot of the distribution of birth year by gender in New York
