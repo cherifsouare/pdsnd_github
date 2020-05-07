@@ -1,3 +1,8 @@
+#**************************************************************
+# Project: Explore Bikeshare Data                             #
+# Author: Cherif Souare                                       #
+#                                                             #
+#**************************************************************
 
 ny = read.csv('new_york_city.csv')
 head(ny)
